@@ -1,0 +1,30 @@
+.navegador {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: end;
+      li a{
+        color: rgb(255, 210, 210);
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        &:hover{
+          transform: scale(1.1);
+        } 
+      }
+    }
+  }
+  
+  .navegador .menu {
+    display: none;
+  }

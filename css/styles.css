@@ -1,39 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto', sans-serif;
-}
-
-header{
-  width: 100%;  
-}
-
-main{
-  background-color: #e0e0e0;
-}
-
-h1 {
-  color: rgb(255, 0, 170);
-  font-size: 50px;
-}
-
-h2 {
-  color:rgb(145, 11, 179);
-  font-size: 36px;
-}
-
-p {
-  text-align: justify;
-  padding: 10px;
-  margin: 10px;
-}
-
-.logo {
-  height: 100px;
-  width: 100px;
-  margin: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .navegador {
@@ -45,50 +14,114 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
-.navegador .menu {
-  display: none;
-}
-
 .navegador ul {
   list-style: none;
   display: flex;
   justify-content: end;
 }
-
 .navegador ul li a {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 210, 210);
   text-decoration: none;
   font-weight: bold;
   display: block;
   font-size: 20px;
   padding: 10px 20px;
+  margin-bottom: 30px;
 }
-
-.navegador ul li a:hover{
+.navegador ul li a:hover {
   transform: scale(1.1);
 }
 
-.portada{
+.navegador .menu {
+  display: none;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.portada {
   width: 100%;
   height: 300px;
-  background-image: url(../multimedia/grupo-coreo.jpg);
+  background-image: url(../multimedia/cuarto-neon.png);
   background-size: cover;
+  background-position-y: bottom;
   background-attachment: fixed;
 }
 
-.contenido-principal{
+header {
+  width: 100%;
+}
+
+main {
+  background-color: #e0e0e0;
+}
+main .parrafo-principal {
+  font-size: 18px;
+  color: #6b6467;
+  text-align: justify;
+  font-weight: lighter;
+  margin: 0px 50px 0px 50px;
+}
+main .parrafo-principal h1 {
+  color: rgb(255, 0, 170);
+  font-size: 50px;
+}
+main .parrafo-principal h1 h2 {
+  color: rgb(145, 11, 179);
+  font-size: 36px;
+}
+
+p {
+  text-align: justify;
+  padding: 10px;
+  margin: 10px;
+}
+
+.contenido-principal {
   text-align: center;
 }
 
-
-.titulo-principal{
-  color: blueviolet;
+.titulo-principal {
+  color: rgb(145, 11, 179);
   font-weight: bold;
 }
 
-.subtitulo-tamanio{
+.subtitulo-tamanio {
   font-size: 46px;
+}
+
+.container {
+  padding: 2%;
+}
+
+.footer-logo {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+.footer-logo:hover {
+  transform: scale(1.1);
+}
+
+.footer-parrafo {
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.footer-social {
+  float: right;
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+  margin-top: 30px;
+}
+.footer-social:hover {
+  transform: scale(1.1);
 }
 
 .card {
@@ -142,42 +175,35 @@ p {
   transition: background-color 0.3s;
   margin-top: auto;
 }
-
 .card-body .btn:hover {
   background-color: #e9368f;
 }
 
-
-video {
-  height: 360px;
-  width: 640px;
-}
-
-.contenido-principal-contacto{
-  display: flex;
-  justify-content: space-between;
+.img-nosotros {
+  margin-bottom: 10px;
+  border-radius: 50% 0 50% 0;
+  border: 5px solid rgb(113, 0, 128);
 }
 
 form {
   max-width: 400px;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding: 10px;
   margin-right: 100px;
 }
-  
-  
+
 label {
   display: block;
   margin-bottom: 5px;
 }
-  
-input , textarea {
+
+input, textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-  
+
 #enviar {
   display: block;
   width: 100%;
@@ -187,9 +213,41 @@ input , textarea {
   border: solid 2px;
   border-radius: 4px;
 }
-
-#enviar:hover{
+#enviar:hover {
   transform: scale(1.01);
+}
+
+.titulo-video {
+  font-size: 36px;
+  font-weight: bold;
+  color: #e9368f;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.video-container video {
+  width: 80%;
+  height: 70%;
+}
+
+.video-container #texto-video {
+  font-size: 24px;
+  color: #6b6467;
+  text-align: justify;
+  font-weight: lighter;
+  margin: 0px 50px 0px 50px;
+}
+
+.contenido-principal-contacto {
+  display: flex;
+  justify-content: space-between;
 }
 
 .recuadro-contacto {
@@ -204,8 +262,7 @@ input , textarea {
   margin-top: 100px;
   margin-left: 10px;
 }
-
-.recuadro-contacto:hover{
+.recuadro-contacto:hover {
   transform: scale(1.05);
 }
 
@@ -240,42 +297,6 @@ input , textarea {
   text-align: justify;
 }
 
-.container {
-  padding: 2%;
-}
-
-.footer-logo{
-  height: 100px;
-  width: 100px;
-  float: left;
-}
-
-.footer-logo:hover{
-  transform: scale(1.1);
-}
-
-.footer-parrafo{
-  font-weight: bold;
-  text-align: center;
-  color: #000000;
-  margin-top: 30px;
-}
-
-.footer-social{
-  float: right;
-  padding: 5px;
-  height: 50px;
-  width: 50px;
-  margin-top: 30px;
-}
-
-.footer-social:hover{
-  transform: scale(1.1)
-}
-
-
-
-
 /* Media Queries para tablet */
 @media (max-width: 768px) {
   .logo {
@@ -283,51 +304,41 @@ input , textarea {
     width: 80px;
     margin: 5px;
   }
-
   .titulo-principal {
     font-size: 40px;
   }
-
   h2 {
     font-size: 30px;
   }
-
   .subtitulo-tamanio {
     font-size: 36px;
   }
-
   .card {
     margin: 10px;
   }
-
   .card .card-title {
     font-size: 18px;
   }
-
   .card .card-text {
     font-size: 14px;
   }
-
   .card-body .btn {
     padding: 6px 12px;
   }
-  .navegador .menu{
+  .navegador .menu {
     display: block;
     color: white;
     font-size: 30px;
     margin: 10px;
     order: -1;
   }
-
-  .navegador .menu:hover + ul{
-    left: 0px; 
+  .navegador .menu:hover + ul {
+    left: 0px;
   }
-
-  .navegador ul:hover{
-    left: 0px; 
+  .navegador ul:hover {
+    left: 0px;
   }
-
-  .navegador ul{
+  .navegador ul {
     position: fixed;
     background-color: white;
     top: 0;
@@ -340,40 +351,30 @@ input , textarea {
     padding-top: 100px;
     transition: 0.5s;
   }
-
   .navegador ul li a {
     color: #000000;
   }
-
   .contenido-principal-contacto {
     flex-direction: column;
     align-items: center;
   }
-
-  
-
   .recuadro-contacto {
     flex-direction: column;
     align-items: center;
   }
-
   .recuadro-contacto .img-contacto {
     margin-bottom: 10px;
     width: 300px;
     margin-top: 80px;
   }
-
   .recuadro-contacto .recuadro-body {
     text-align: center;
     margin-bottom: 100px;
   }
-
   form {
     margin-left: 300px;
   }
-
 }
-
 /* Media Queries para celular */
 @media (max-width: 480px) {
   .logo {
@@ -381,52 +382,42 @@ input , textarea {
     width: 60px;
     margin: 5px;
   }
-
   h1 {
     font-size: 30px;
   }
-
   h2 {
     font-size: 24px;
   }
-
   .subtitulo-tamanio {
     font-size: 28px;
   }
-
   .card .card-title {
     font-size: 16px;
   }
-
   .card .card-text {
     font-size: 12px;
   }
-
   .card .card-body {
     padding: 10px;
   }
-
   .card-body .btn {
     padding: 4px 8px;
     font-size: 12px;
   }
-  .navegador .menu{
+  .navegador .menu {
     display: block;
     color: white;
     font-size: 30px;
     margin: 10px;
     order: -1;
   }
-
-  .navegador .menu:hover + ul{
-    left: 0px; 
+  .navegador .menu:hover + ul {
+    left: 0px;
   }
-
-  .navegador ul:hover{
-    left: 0px; 
+  .navegador ul:hover {
+    left: 0px;
   }
-
-  .navegador ul{
+  .navegador ul {
     position: fixed;
     background-color: white;
     top: 0;
@@ -439,53 +430,44 @@ input , textarea {
     padding-top: 100px;
     transition: 0.5s;
   }
-
   .navegador ul li a {
     color: #000000;
   }
-
   .contenido-principal-contacto {
     flex-direction: column;
     align-items: center;
   }
-
   .recuadro-contacto,
   form {
     width: 100%;
     margin-bottom: 20px;
   }
-
-  form{
+  form {
     margin-left: 200px;
   }
-
   form input, textarea {
     max-width: 90%;
   }
 }
-
-@media (max-width: 978px){
+@media (max-width: 978px) {
   .contenido-principal-contacto {
     flex-direction: column;
     align-items: center;
   }
-
   .recuadro-contacto,
   form {
     width: 100%;
     margin-bottom: 20px;
   }
-
-  .recuadro-contacto img{
+  .recuadro-contacto img {
     margin: 20px;
   }
-
-  .recuadro-contacto .recuadro-texto{
+  .recuadro-contacto .recuadro-texto {
     text-align: center;
   }
-
-  form{
+  form {
     margin-left: 150px;
   }
-
 }
+
+/*# sourceMappingURL=styles.css.map */
